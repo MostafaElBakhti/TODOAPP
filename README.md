@@ -3,14 +3,23 @@ A simple and elegant TODO application to help you manage your daily tasks easily
 🔗 Live Demo: https://mostafaelbakhti.github.io/TODOAPP/
 
 📋 Features
+
 ✅ Add new tasks
+
 ✅ Mark tasks as done
+
 ✅ Remove tasks
+
 ✅ Responsive design (works on mobile and desktop)
-💻 Technologies Used
+
+💻 Technologies Used : 
+
 HTML5
+
 CSS3
+
 JavaScript (Vanilla JS)
+
 🚀 Getting Started
 Follow these simple steps to run the project locally:
 
