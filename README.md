@@ -1,30 +1,43 @@
-# TODOAPP
+A simple and elegant TODO application to help you manage your daily tasks easily and efficiently.
 
-A simple and elegant TODO application to manage your daily tasks.
+🔗 Live Demo: https://mostafaelbakhti.github.io/TODOAPP/
 
-## Features
+📋 Features
+✅ Add new tasks
+✅ Mark tasks as done
+✅ Remove tasks
+✅ Responsive design (works on mobile and desktop)
+💻 Technologies Used
+HTML5
+CSS3
+JavaScript (Vanilla JS)
+🚀 Getting Started
+Follow these simple steps to run the project locally:
 
-- Add new tasks
-- Mark tasks as done
-- Remove tasks
-- Responsive design
+✅ Prerequisites
+A modern web browser (Chrome, Firefox, Edge, etc.)
+Optionally, a code editor like Visual Studio Code (VSCode)
+✅ Installation
+Clone the repository:
 
-## Technologies Used
+bash
+Copy
+Edit
+git clone https://github.com/MostafaElBakhti/TODOAPP.git
+Navigate to the project directory:
 
-- HTML
-- CSS
-- JavaScript
+bash
+Copy
+Edit
+cd TODOAPP
+Open the index.html file in your browser.
 
-## Getting Started
+You can also open it with Live Server if you are using VSCode.
+🌐 Live Preview
+You can check the live version here:
+👉 https://mostafaelbakhti.github.io/TODOAPP/
 
-To get a local copy up and running, follow these simple steps.
+📞 Contact
+For any questions or suggestions, feel free to reach out:
 
-### Prerequisites
-
-You need a web browser to run this application.
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your-username/todoapp.git
+GitHub: MostafaElBakhti
