@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(31, 29, 29);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    background-color: aqua;
+    max-width: 800px;
+}
+
+.title{
+    height: 20%;
+    width: 100%;
+    background-color: #d2b3b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+    background-color: azure;
+    overflow-y: scroll;
+}
+
+
+.add{
+    width: 100%;
+    height: 90%;
+}
+
+
+.input {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: none;
+}
+
+.input input {
+    flex: 1;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input input:focus {
+    border-color: #7db6e8;
+    box-shadow: 0 0 0 2px rgba(125, 182, 232, 0.2);
+}
+
+.input input::placeholder {
+    color: #aaa;
+}
+
+.input button {
+    height: 40px;
+    padding: 0 20px;
+    margin-left: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input button:hover {
+    background-color: #3a7bca;
+}
+
+.input button:active {
+    background-color: #2e66b3;
+}
+
+
+
+#add{
+    display: flex;
+    flex-direction: column;
+}
+
+.test{
+    height: 10%;
+    background-color: red;
+}
+
+
+
+
+
+.myDiv{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c8fdfd;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ac9e9e;
+    
+}
+
+.remove{
+    height: 30px;
+    padding: 0 20px;
+    margin-left: 10px;
+    background-color: #df1f1f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.done{
+    height: 30px;
+    padding: 0 20px;
+    margin-left: 10px;
+    background-color: #36a836;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+}
