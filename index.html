@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="to-do">
+            <div class="title">
+                <h1>TODO APP</h1>
+            </div>
+            <div class="content">
+                <div class="task-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-tasks"></i>
+                        <span id="total-tasks">0 tasks</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span id="completed-tasks">0 completed</span>
+                    </div>
+                </div>
+                
+                <div class="input">
+                    <input id="myInput" type="text" placeholder="Add a new task">
+                    <select id="priority-select">
+                        <option value="low">Low Priority</option>
+                        <option value="medium" selected>Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <button id="button">Add Task</button>
+                </div>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+                
+                <div class="add" id="add">
+                    <!-- Tasks will be added here -->
+                </div>
+                
+                <div class="clear-actions">
+                    <button id="clear-completed">Clear Completed</button>
+                    <button id="clear-all">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

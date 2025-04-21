@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --primary-color: #4a90e2;
+    --primary-dark: #3a7bca;
+    --secondary-color: #f5f5f5;
+    --success-color: #36a836;
+    --danger-color: #df1f1f;
+    --low-priority: #4caf50;
+    --medium-priority: #ff9800;
+    --high-priority: #f44336;
+    --task-bg: #e6f7f7;
+    --border-color: #ddd;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(31, 29, 29);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.to-do {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 85vh;
+    background-color: white;
+    max-width: 800px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    height: 15%;
+    width: 100%;
+    background-color: #4a90e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.content {
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+}
+
+.stat-item i {
+    color: var(--primary-color);
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.input input {
+    flex: 1;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input select {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input input:focus {
+    border-color: #7db6e8;
+    box-shadow: 0 0 0 2px rgba(125, 182, 232, 0.2);
+}
+
+.input input::placeholder {
+    color: #aaa;
+}
+
+.input button {
+    height: 40px;
+    padding: 0 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.input button:hover {
+    background-color: var(--primary-dark);
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+#add {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.myDiv {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--task-bg);
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid #aaa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.myDiv:hover {
+    transform: translateY(-2px);
+}
+
+.myDiv.priority-low {
+    border-left-color: var(--low-priority);
+}
+
+.myDiv.priority-medium {
+    border-left-color: var(--medium-priority);
+}
+
+.myDiv.priority-high {
+    border-left-color: var(--high-priority);
+}
+
+.task-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+.task-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+    word-break: break-word;
+}
+
+.task-meta {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.priority-badge {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    color: white;
+    margin-right: 10px;
+}
+
+.priority-badge.low {
+    background-color: var(--low-priority);
+}
+
+.priority-badge.medium {
+    background-color: var(--medium-priority);
+}
+
+.priority-badge.high {
+    background-color: var(--high-priority);
+}
+
+.right {
+    display: flex;
+    gap: 5px;
+}
+
+.task-btn {
+    height: 36px;
+    width: 36px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-btn:hover {
+    transform: scale(1.05);
+}
+
+.edit-btn {
+    background-color: #ffc107;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.done-btn {
+    background-color: var(--success-color);
+}
+
+.done-btn:hover {
+    background-color: #2d8a2d;
+}
+
+.remove-btn {
+    background-color: var(--danger-color);
+}
+
+.remove-btn:hover {
+    background-color: #c41818;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.clear-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.clear-actions button {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.clear-actions button:hover {
+    background-color: #e9ecef;
+}
+
+#clear-completed {
+    color: var(--primary-color);
+}
+
+#clear-all {
+    color: var(--danger-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .input {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .input input, .input select, .input button {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .filters {
+        justify-content: center;
+    }
+    
+    .task-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
